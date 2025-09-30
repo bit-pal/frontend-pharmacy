@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// die importe
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TrustpilotReviewsSection from '@/components/TrustpilotReviewsSection';
