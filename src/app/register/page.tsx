@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RegisterForm from '@/components/RegisterForm';
 import AnimatedTrustBanner from '@/components/AnimatedTrustBanner';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Register - Assured Pharmacy",
@@ -33,14 +34,16 @@ export default function RegisterPage() {
                 </p>
               </div>
               
-              {/* Image skeleton placeholder */}
+              {/* Banner image */}
               <div className="flex justify-start">
-                <div className="w-96 h-80 bg-gray-200 rounded-lg animate-pulse flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-gray-300 rounded-lg mx-auto mb-4"></div>
-                    <div className="h-4 bg-gray-300 rounded w-32 mx-auto mb-2"></div>
-                    <div className="h-3 bg-gray-300 rounded w-24 mx-auto"></div>
-                  </div>
+                <div className="w-full max-w-md h-80 relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/login/banner-front.png"
+                    alt="Health journey illustration"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
                 </div>
               </div>
             </div>
