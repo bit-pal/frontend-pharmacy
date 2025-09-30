@@ -38,7 +38,7 @@ export default function RegisterPage() {
               <div className="flex justify-start">
                 <div className="w-full max-w-md h-80 relative rounded-lg overflow-hidden">
                   <Image
-                    src="/login/banner-front.png"
+                    src="/Login/banner-front.png"
                     alt="Health journey illustration"
                     fill
                     className="object-contain"
