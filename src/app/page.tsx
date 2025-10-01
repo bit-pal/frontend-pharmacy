@@ -10,11 +10,41 @@ import FreeTrackedDeliverySection from '@/components/FreeTrackedDeliverySection'
 import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import StartConsultationButton from '@/components/StartConsultationButton';
+import AccountWelcomeCard from '@/components/AccountWelcomeCard';
+import AddressCard from '@/components/AddressCard';
+import MyHealthCard from '@/components/MyHealthCard';
 
 export default function Home() {
+  // This would be replaced with actual auth state management
+  const isLoggedIn = false; // Change to true to test the welcome card
+  const userName = "Akio Ito"; // This would come from user session/auth
+
   return (
     <main className="min-h-screen">
       <Header />
+      
+      {/* Welcome Card - Only show when user is logged in */}
+      {isLoggedIn && (
+        <div className="bg-white py-8">
+          <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
+            <AccountWelcomeCard 
+              userName={userName}
+              description="Welcome back! From your account dashboard you can view your recent orders, manage your shipping and billing addresses"
+            />
+            
+            {/* Address Card - Only show when user is logged in */}
+            <div className="mt-8">
+              <AddressCard />
+            </div>
+            
+            {/* My Health Card - Only show when user is logged in */}
+            <div className="mt-8">
+              <MyHealthCard />
+            </div>
+          </div>
+        </div>
+      )}
+      
       <HeroSection />
       <TreatmentsSection />
       <HomeHowItWorksSection />
