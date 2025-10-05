@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface MyHealthCardProps {
   initialHeight?: string;
@@ -17,6 +18,24 @@ export default function MyHealthCard({
   const [weight, setWeight] = useState(initialWeight);
   const [heightUnit, setHeightUnit] = useState("cm");
   const [weightUnit, setWeightUnit] = useState("kg");
+  const [showValidation, setShowValidation] = useState(false);
+  const [showPreviousReadings, setShowPreviousReadings] = useState(false);
+  const router = useRouter();
+
+  const handleBookConsultation = () => {
+    router.push('/book-consultation');
+  };
+
+  const handleUpdate = () => {
+    // Check if values are entered
+    if (!height || !weight) {
+      setShowValidation(true);
+      setShowPreviousReadings(false);
+    } else {
+      setShowValidation(false);
+      setShowPreviousReadings(true);
+    }
+  };
 
   return (
     <div className="space-y-6">
@@ -73,10 +92,39 @@ export default function MyHealthCard({
             </div>
             
             {/* Update Button */}
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm">
+            <button 
+              onClick={handleUpdate}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm"
+            >
               Update
             </button>
           </div>
+
+          {/* Validation Message */}
+          {showValidation && (
+            <div className="mt-4 text-center">
+              <p className="text-red-500 text-sm">Please enter valid values.</p>
+            </div>
+          )}
+
+          {/* Previous Readings */}
+          {showPreviousReadings && (
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Previous Readings</h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="text-sm text-gray-600 mb-1">1st Oct, 25</div>
+                  <div className="text-lg font-bold text-gray-900">80 kg</div>
+                  <div className="text-sm text-gray-500">(25.2 BMI)</div>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="text-sm text-gray-600 mb-1">1st Oct, 25</div>
+                  <div className="text-lg font-bold text-gray-900">78 kg</div>
+                  <div className="text-sm text-gray-500">(24.6 BMI)</div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* How are you feeling Card */}
@@ -97,7 +145,10 @@ export default function MyHealthCard({
             
             {/* Action Buttons */}
             <div className="flex gap-3">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm">
+              <button 
+                onClick={handleBookConsultation}
+                className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm"
+              >
                 Book Free Consultation
               </button>
               <button className="bg-gray-800 hover:bg-gray-900 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm">

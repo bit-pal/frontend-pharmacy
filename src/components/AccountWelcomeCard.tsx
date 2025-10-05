@@ -1,5 +1,7 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+
 interface AccountWelcomeCardProps {
   userName: string;
   description?: string;
@@ -9,6 +11,15 @@ export default function AccountWelcomeCard({
   userName, 
   description = "From your account dashboard you can view your recent orders, manage your shipping and billing addresses"
 }: AccountWelcomeCardProps) {
+  const router = useRouter();
+
+  const handleEditAccount = () => {
+    router.push('/customer/account/edit');
+  };
+
+  const handleEmailPreferences = () => {
+    router.push('/customer/account/email-preferences');
+  };
   return (
     <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl p-8 mb-8 border border-gray-200">
       <div className="flex flex-col space-y-6">
@@ -22,10 +33,16 @@ export default function AccountWelcomeCard({
         
         {/* Buttons section */}
         <div className="flex flex-wrap gap-3">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-2.5 rounded-md transition-colors duration-200 text-sm">
+          <button 
+            onClick={handleEditAccount}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-2.5 rounded-md transition-colors duration-200 text-sm"
+          >
             Edit Password And Account Details
           </button>
-          <button className="bg-gray-700 hover:bg-gray-800 text-white font-medium px-6 py-2.5 rounded-md transition-colors duration-200 text-sm">
+          <button 
+            onClick={handleEmailPreferences}
+            className="bg-gray-700 hover:bg-gray-800 text-white font-medium px-6 py-2.5 rounded-md transition-colors duration-200 text-sm"
+          >
             Manage Email Preferences
           </button>
           <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium px-6 py-2.5 rounded-md transition-colors duration-200 text-sm">

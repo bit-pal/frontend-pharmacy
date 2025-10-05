@@ -1,5 +1,7 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+
 interface TreatmentStatusCardProps {
   treatmentName: string;
   needsAppointment?: boolean;
@@ -13,6 +15,11 @@ export default function TreatmentStatusCard({
   status = 'waiting',
   statusMessage = "Your order is pending approval from one of our prescribers. We'll process it as soon as it's approved."
 }: TreatmentStatusCardProps) {
+  const router = useRouter();
+
+  const handleBookAppointment = () => {
+    router.push('/book-consultation');
+  };
   return (
     <div className="bg-white rounded-lg p-6 shadow-sm">
       <h3 className="text-xl font-semibold text-teal-600 mb-4">{treatmentName}</h3>
@@ -20,7 +27,10 @@ export default function TreatmentStatusCard({
       {needsAppointment ? (
         <div className="flex flex-col items-center justify-center">
           <p className="text-gray-700 mb-4">Please book an appointment if you have not completed it yet.</p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2.5 rounded-md transition-colors duration-200 mb-6">
+          <button 
+            onClick={handleBookAppointment}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2.5 rounded-md transition-colors duration-200 mb-6"
+          >
             Book appointment
           </button>
           
