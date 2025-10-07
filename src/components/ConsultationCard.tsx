@@ -14,7 +14,8 @@ interface ConsultationCardProps {
   description: string;
   features: Feature[];
   buttonText: string;
-  buttonLink: string;
+  buttonLink?: string;
+  onButtonClick?: () => void;
   additionalContent?: React.ReactNode;
   doctorName?: string;
   doctorTitle?: string;
@@ -28,6 +29,7 @@ export default function ConsultationCard({
   features,
   buttonText,
   buttonLink,
+  onButtonClick,
   additionalContent,
   doctorName = "Shirin Jazayeri",
   doctorTitle = "Clinical Lead",
@@ -68,12 +70,21 @@ export default function ConsultationCard({
           {/* CTA Button and Additional Content */}
           <div className="space-y-4">
             <div className="pt-4">
-              <Link 
-                href={buttonLink}
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
-              >
-                {buttonText}
-              </Link>
+              {onButtonClick ? (
+                <button 
+                  onClick={onButtonClick}
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
+                >
+                  {buttonText}
+                </button>
+              ) : (
+                <Link 
+                  href={buttonLink || '#'}
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
+                >
+                  {buttonText}
+                </Link>
+              )}
             </div>
             
             {additionalContent && (
