@@ -235,7 +235,7 @@ export default function WeightLossTreatmentPricesPage() {
                 {/* Treatment Info */}
                 <div className="bg-gray-50 rounded-lg p-6 space-y-4 text-sm text-gray-700">
                   <p>
-                    The Wegovy weight loss treatment plan is billed monthly and will be automatically deducted from your account. Each month's medication will be delivered to your door on time, so you can continue your journey without interruption.
+                    The Wegovy weight loss treatment plan is billed monthly and will be automatically deducted from your account. Each month&apos;s medication will be delivered to your door on time, so you can continue your journey without interruption.
                   </p>
                   <p className="font-semibold">Pricing (per pen / month):</p>
                   <ul className="space-y-1 ml-4">

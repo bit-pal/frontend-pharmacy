@@ -482,7 +482,7 @@ export default function WeightLossConsultationPage() {
                         className="mt-1 w-5 h-5 text-green-500 border-gray-300 rounded focus:ring-green-500"
                       />
                       <span className="text-gray-800 text-sm">
-                        I've read and accept the{' '}
+                        I&apos;ve read and accept the{' '}
                         <a href="/terms-and-conditions" target="_blank" className="text-blue-600 hover:underline">
                           terms & conditions
                         </a>
@@ -825,7 +825,7 @@ export default function WeightLossConsultationPage() {
                           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 flex items-start space-x-2">
                             <span className="text-yellow-600 text-lg">!</span>
                             <div className="text-yellow-800 text-sm">
-                              Could you please share with us when you first started taking this medication, how long you've been using it, and the last time you took it? It helps us understand your treatment history better.
+                              Could you please share with us when you first started taking this medication, how long you&apos;ve been using it, and the last time you took it? It helps us understand your treatment history better.
                             </div>
                           </div>
                           <textarea
