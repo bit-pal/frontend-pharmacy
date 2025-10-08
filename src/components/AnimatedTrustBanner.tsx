@@ -63,11 +63,14 @@ export default function AnimatedTrustBanner() {
             ))}
           </div>
 
-          {/* Mobile: Animated carousel */}
-          <div className="md:hidden relative w-full flex justify-center">
+          {/* Mobile: Sliding items one by one */}
+          <div className="md:hidden relative w-full overflow-hidden h-6">
             {isClient ? (
-              <div className="relative overflow-hidden w-64 h-6">
-                <div className="flex items-center justify-center space-x-2">
+              <div
+                key={currentIndex}
+                className="absolute inset-0 flex items-center justify-center animate-slide-in-out"
+              >
+                <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 relative flex-shrink-0">
                     <Image
                       src={trustItems[currentIndex].icon}
@@ -81,8 +84,8 @@ export default function AnimatedTrustBanner() {
                 </div>
               </div>
             ) : (
-              <div className="relative overflow-hidden w-64 h-6">
-                <div className="flex items-center justify-center space-x-2">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 relative flex-shrink-0">
                     <Image
                       src={trustItems[0].icon}

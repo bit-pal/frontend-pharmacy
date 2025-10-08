@@ -172,7 +172,7 @@ export default function BookConsultationCard() {
             <h1 className="text-2xl font-bold text-gray-900 mb-6">Book A Free Consultation</h1>
           </div>
           {/* Header */}
-          <div className="text-white py-12 px-8 relative border-b border-gray-200 rounded-t-lg" style={{backgroundColor: '#A39789'}}>
+          <div className="text-white py-12 px-8 relative border-b border-gray-200 rounded-t-lg bg-pink-400">
         {/* Logo - centered */}
         <div className="flex items-center justify-center mb-8">
           <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center mr-3">
@@ -187,8 +187,8 @@ export default function BookConsultationCard() {
         </div>
         
         
-        {/* Step indicators - positioned on the left */}
-        <div className="absolute left-8 top-1/2 transform -translate-y-1/2 flex space-x-2">
+        {/* Step indicators - positioned at the bottom left */}
+        <div className="absolute left-8 bottom-4 flex space-x-2">
           <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
             currentStep > 1 ? 'bg-gray-600 text-white' : 'bg-white text-gray-600'
           }`}>

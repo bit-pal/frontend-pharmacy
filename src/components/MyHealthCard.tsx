@@ -45,24 +45,24 @@ export default function MyHealthCard({
       {/* Two Cards in Same Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* My Weight Card */}
-        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-          <h4 className="text-lg font-bold text-gray-900 mb-6">My Weight</h4>
+        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 md:p-6">
+          <h4 className="text-lg font-bold text-gray-900 mb-4 md:mb-6">My Weight</h4>
           
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-wrap items-center gap-2 md:gap-4">
             {/* Height */}
-            <div className="flex items-center space-x-2">
-              <label className="text-gray-400 text-sm">Height</label>
+            <div className="flex items-center gap-1 md:gap-2">
+              <label className="text-gray-400 text-sm whitespace-nowrap">Height</label>
               <input
                 type="text"
                 value={height}
                 onChange={(e) => setHeight(e.target.value)}
-                className="w-16 px-2 py-1 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 text-sm"
+                className="w-12 md:w-16 px-1 md:px-2 py-1 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 text-sm"
                 placeholder=""
               />
               <select
                 value={heightUnit}
                 onChange={(e) => setHeightUnit(e.target.value)}
-                className="px-2 py-1 border border-gray-300 rounded text-sm bg-white"
+                className="px-1 md:px-2 py-1 border border-gray-300 rounded text-sm bg-white"
               >
                 <option value="cm">cm</option>
                 <option value="ft">ft</option>
@@ -71,19 +71,19 @@ export default function MyHealthCard({
             </div>
             
             {/* Weight */}
-            <div className="flex items-center space-x-2">
-              <label className="text-gray-400 text-sm">Weight</label>
+            <div className="flex items-center gap-1 md:gap-2">
+              <label className="text-gray-400 text-sm whitespace-nowrap">Weight</label>
               <input
                 type="text"
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
-                className="w-16 px-2 py-1 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 text-sm"
+                className="w-12 md:w-16 px-1 md:px-2 py-1 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 text-sm"
                 placeholder=""
               />
               <select
                 value={weightUnit}
                 onChange={(e) => setWeightUnit(e.target.value)}
-                className="px-2 py-1 border border-gray-300 rounded text-sm bg-white"
+                className="px-1 md:px-2 py-1 border border-gray-300 rounded text-sm bg-white"
               >
                 <option value="kg">kg</option>
                 <option value="lbs">lbs</option>
@@ -94,7 +94,7 @@ export default function MyHealthCard({
             {/* Update Button */}
             <button 
               onClick={handleUpdate}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-3 md:px-4 py-2 rounded-md transition-colors duration-200 text-sm whitespace-nowrap"
             >
               Update
             </button>
@@ -111,16 +111,16 @@ export default function MyHealthCard({
           {showPreviousReadings && (
             <div className="mt-6">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Previous Readings</h4>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <div className="text-sm text-gray-600 mb-1">1st Oct, 25</div>
-                  <div className="text-lg font-bold text-gray-900">80 kg</div>
-                  <div className="text-sm text-gray-500">(25.2 BMI)</div>
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                <div className="bg-gray-50 rounded-lg p-3 md:p-4">
+                  <div className="text-xs md:text-sm text-gray-600 mb-1">1st Oct, 25</div>
+                  <div className="text-base md:text-lg font-bold text-gray-900">80 kg</div>
+                  <div className="text-xs md:text-sm text-gray-500">(25.2 BMI)</div>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <div className="text-sm text-gray-600 mb-1">1st Oct, 25</div>
-                  <div className="text-lg font-bold text-gray-900">78 kg</div>
-                  <div className="text-sm text-gray-500">(24.6 BMI)</div>
+                <div className="bg-gray-50 rounded-lg p-3 md:p-4">
+                  <div className="text-xs md:text-sm text-gray-600 mb-1">1st Oct, 25</div>
+                  <div className="text-base md:text-lg font-bold text-gray-900">78 kg</div>
+                  <div className="text-xs md:text-sm text-gray-500">(24.6 BMI)</div>
                 </div>
               </div>
             </div>
@@ -128,8 +128,8 @@ export default function MyHealthCard({
         </div>
 
         {/* How are you feeling Card */}
-        <div className="bg-gradient-to-br from-green-50 to-teal-50 border border-gray-200 rounded-lg shadow-sm p-6 relative">
-          <div className="pr-16">
+        <div className="bg-gradient-to-br from-green-50 to-teal-50 border border-gray-200 rounded-lg shadow-sm p-4 md:p-6 relative">
+          <div className="pr-12 md:pr-16">
             <h4 className="text-lg font-bold text-gray-900 mb-3">How are you feeling?</h4>
             <p className="text-sm text-gray-600 mb-4 leading-relaxed">
               Are you experiencing any issues, side effects, or have feedback? Please let us know
@@ -144,14 +144,14 @@ export default function MyHealthCard({
             </div>
             
             {/* Action Buttons */}
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-2 md:gap-3">
               <button 
                 onClick={handleBookConsultation}
-                className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-3 md:px-4 py-2 rounded-md transition-colors duration-200 text-sm whitespace-nowrap"
               >
                 Book Free Consultation
               </button>
-              <button className="bg-gray-800 hover:bg-gray-900 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200 text-sm">
+              <button className="bg-gray-800 hover:bg-gray-900 text-white font-medium px-3 md:px-4 py-2 rounded-md transition-colors duration-200 text-sm whitespace-nowrap">
                 Send Message
               </button>
             </div>
