@@ -676,7 +676,7 @@ export default function PrematureEjaculationConsultationPage() {
               <li>Epilepsy</li>
               <li>Glucose- galactose malabsorption, lapp lactase deficiency or glucose intolerance</li>
               <li>LOW blood pressure (or history or falls or collapses)</li>
-              <li>Any condition which affects the shape of the penis such as cavernosal fibrosis, angulation or Peyronie's disease</li>
+              <li>Any condition which affects the shape of the penis such as cavernosal fibrosis, angulation or Peyronie&apos;s disease</li>
               <li>Pain in your genitals when you ejaculate or pass urine</li>
               <li>History of migraines or severe headaches</li>
               <li>Serious brain injury</li>

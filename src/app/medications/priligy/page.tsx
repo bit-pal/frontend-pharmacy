@@ -325,7 +325,7 @@ export default function PriligyProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -379,7 +379,7 @@ export default function PriligyProductPage() {
               {expandedSection === 'what' && (
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 mb-4">
-                    Priligy (dapoxetine) is a prescription medication specifically designed to treat premature ejaculation (PE) in men aged 18-64. It's the first and only licensed treatment for PE in the UK.
+                    Priligy (dapoxetine) is a prescription medication specifically designed to treat premature ejaculation (PE) in men aged 18-64. It&apos;s the first and only licensed treatment for PE in the UK.
                   </p>
                   <p className="text-gray-700 mb-4">
                     Priligy belongs to a class of medications called selective serotonin reuptake inhibitors (SSRIs). It works by increasing serotonin levels in the nervous system, which helps delay ejaculation and gives you better control during sexual activity.
@@ -467,7 +467,7 @@ export default function PriligyProductPage() {
                 onClick={() => toggleSection('who')}
                 className="w-full flex items-center justify-between p-6 text-left"
               >
-                <span className="text-lg font-semibold text-gray-900">Who shouldn't take Priligy?</span>
+                <span className="text-lg font-semibold text-gray-900">Who shouldn&apos;t take Priligy?</span>
                 <span className="text-2xl text-gray-600">{expandedSection === 'who' ? '−' : '+'}</span>
               </button>
               {expandedSection === 'who' && (
@@ -490,7 +490,7 @@ export default function PriligyProductPage() {
                     Avoid drinking alcohol while taking Priligy as it increases the risk of side effects like dizziness and fainting.
                   </p>
                   <p className="text-gray-700">
-                    Always inform your doctor about all medications you're taking and any medical conditions you have before starting Priligy.
+                    Always inform your doctor about all medications you&apos;re taking and any medical conditions you have before starting Priligy.
                   </p>
                 </div>
               )}

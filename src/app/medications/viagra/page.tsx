@@ -326,7 +326,7 @@ export default function ViagraProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -398,7 +398,7 @@ export default function ViagraProductPage() {
               {expandedSection === 'what' && (
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 mb-4">
-                    Viagra is the original "blue pill" and the world's most famous ED treatment. Developed by Pfizer, it contains sildenafil citrate and has been helping men with erectile dysfunction since 1998.
+                    Viagra is the original &quot;blue pill&quot; and the world&apos;s most famous ED treatment. Developed by Pfizer, it contains sildenafil citrate and has been helping men with erectile dysfunction since 1998.
                   </p>
                   <p className="text-gray-700 mb-4">
                     Viagra works by relaxing the blood vessels in your penis, allowing blood to flow into your penis when you get sexually excited. It will only help you to get an erection if you are sexually stimulated.
@@ -467,7 +467,7 @@ export default function ViagraProductPage() {
                     <li>Visual disturbances (blurred vision, changes in color vision)</li>
                   </ul>
                   <p className="text-gray-700 mb-4">
-                    These side effects are usually mild and don't last long. If you experience any serious side effects or if the side effects persist, contact your doctor.
+                    These side effects are usually mild and don&apos;t last long. If you experience any serious side effects or if the side effects persist, contact your doctor.
                   </p>
                   <p className="text-gray-700 mb-4 font-semibold">
                     Seek immediate medical attention if you experience:
@@ -488,7 +488,7 @@ export default function ViagraProductPage() {
                 onClick={() => toggleSection('who')}
                 className="w-full flex items-center justify-between p-6 text-left"
               >
-                <span className="text-lg font-semibold text-gray-900">Who shouldn't take Viagra?</span>
+                <span className="text-lg font-semibold text-gray-900">Who shouldn&apos;t take Viagra?</span>
                 <span className="text-2xl text-gray-600">{expandedSection === 'who' ? '−' : '+'}</span>
               </button>
               {expandedSection === 'who' && (
@@ -505,7 +505,7 @@ export default function ViagraProductPage() {
                     <li>Are allergic to sildenafil or any of the other ingredients</li>
                   </ul>
                   <p className="text-gray-700">
-                    Always inform your doctor about all medications you're taking and any medical conditions you have before starting Viagra.
+                    Always inform your doctor about all medications you&apos;re taking and any medical conditions you have before starting Viagra.
                   </p>
                 </div>
               )}

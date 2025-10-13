@@ -325,7 +325,7 @@ export default function TadalafilProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -397,7 +397,7 @@ export default function TadalafilProductPage() {
               {expandedSection === 'what' && (
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 mb-4">
-                    Tadalafil is the generic version of Cialis and is used to treat erectile dysfunction (ED) in men. It's known as "the weekend pill" because it can work for up to 36 hours, much longer than other ED treatments.
+                    Tadalafil is the generic version of Cialis and is used to treat erectile dysfunction (ED) in men. It&apos;s known as &quot;the weekend pill&quot; because it can work for up to 36 hours, much longer than other ED treatments.
                   </p>
                   <p className="text-gray-700 mb-4">
                     Tadalafil works by relaxing the blood vessels in your penis, allowing blood to flow into your penis when you get sexually excited. It will only help you to get an erection if you are sexually stimulated.
@@ -409,7 +409,7 @@ export default function TadalafilProductPage() {
                     <li>Take 30 minutes to 2 hours before sexual activity</li>
                   </ul>
                   <p className="text-gray-700">
-                    Tadalafil is suitable for most men with ED. However, it's important to consult with a healthcare professional before starting treatment to ensure it's appropriate for you.
+                    Tadalafil is suitable for most men with ED. However, it&apos;s important to consult with a healthcare professional before starting treatment to ensure it&apos;s appropriate for you.
                   </p>
                 </div>
               )}
@@ -431,7 +431,7 @@ export default function TadalafilProductPage() {
                   </p>
                   <ul className="list-disc pl-6 space-y-2 mb-4">
                     <li>Swallow the tablet whole with water</li>
-                    <li>Can be taken with or without food - food doesn't affect how it works</li>
+                    <li>Can be taken with or without food - food doesn&apos;t affect how it works</li>
                     <li>Only take one tablet per day</li>
                     <li>Sexual stimulation is required for the medication to work</li>
                     <li>Effects can last up to 36 hours, allowing for more spontaneity</li>
@@ -466,7 +466,7 @@ export default function TadalafilProductPage() {
                     <li>Dizziness</li>
                   </ul>
                   <p className="text-gray-700 mb-4">
-                    These side effects are usually mild and don't last long. If you experience any serious side effects or if the side effects persist, contact your doctor.
+                    These side effects are usually mild and don&apos;t last long. If you experience any serious side effects or if the side effects persist, contact your doctor.
                   </p>
                   <p className="text-gray-700 mb-4 font-semibold">
                     Seek immediate medical attention if you experience:
@@ -487,7 +487,7 @@ export default function TadalafilProductPage() {
                 onClick={() => toggleSection('who')}
                 className="w-full flex items-center justify-between p-6 text-left"
               >
-                <span className="text-lg font-semibold text-gray-900">Who shouldn't take Tadalafil?</span>
+                <span className="text-lg font-semibold text-gray-900">Who shouldn&apos;t take Tadalafil?</span>
                 <span className="text-2xl text-gray-600">{expandedSection === 'who' ? '−' : '+'}</span>
               </button>
               {expandedSection === 'who' && (
@@ -504,7 +504,7 @@ export default function TadalafilProductPage() {
                     <li>Are allergic to tadalafil or any of the other ingredients</li>
                   </ul>
                   <p className="text-gray-700">
-                    Always inform your doctor about all medications you're taking and any medical conditions you have before starting Tadalafil.
+                    Always inform your doctor about all medications you&apos;re taking and any medical conditions you have before starting Tadalafil.
                   </p>
                 </div>
               )}

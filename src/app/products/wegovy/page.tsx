@@ -311,7 +311,7 @@ export default function WegovyProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you. (Exclusions apply)</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you. (Exclusions apply)</p>
             </div>
           </div>
         </div>
@@ -600,7 +600,7 @@ export default function WegovyProductPage() {
                   
                   <h4 className="font-bold text-gray-900 mb-3">Choosing when to use Wegovy?</h4>
                   <p className="text-gray-700 mb-4">
-                    You should inject Wegovy on the same day every week. You can take it at any time of day. You might want to set a reminder on your phone, so you don't forget what day you normally take it.
+                    You should inject Wegovy on the same day every week. You can take it at any time of day. You might want to set a reminder on your phone, so you don&apos;t forget what day you normally take it.
                   </p>
                   <ul className="list-disc pl-6 space-y-2 mb-4">
                     <li>You can use your pen at any time of the day, with or without meals.</li>
@@ -612,7 +612,7 @@ export default function WegovyProductPage() {
                   
                   <h4 className="font-bold text-gray-900 mb-3">Missed a dose of Wegovy?</h4>
                   <p className="text-gray-700">
-                    If you happen to miss a dose of Wegovy, it's recommended to administer the missed dose within 5 days of the scheduled time. Please strive to take it promptly upon realising the oversight.
+                    If you happen to miss a dose of Wegovy, it&apos;s recommended to administer the missed dose within 5 days of the scheduled time. Please strive to take it promptly upon realising the oversight.
                   </p>
                 </div>
               )}
@@ -833,7 +833,7 @@ export default function WegovyProductPage() {
 
                     {/* Right - We've Got The Answers */}
                     <div className="flex flex-col justify-center">
-                      <h3 className="text-3xl font-bold text-gray-900 mb-6">We've Got The Answers</h3>
+                      <h3 className="text-3xl font-bold text-gray-900 mb-6">We&apos;ve Got The Answers</h3>
                       <p className="text-gray-700 mb-8">
                         If you have any questions regarding this medicine then please just send us a message using the form to the left. We aim to respond in under an hour during working hours.
                       </p>

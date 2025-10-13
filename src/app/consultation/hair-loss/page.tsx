@@ -44,18 +44,6 @@ export default function HairLossConsultationPage() {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleMultipleChoice = (field: string, value: string) => {
-    setFormData(prev => {
-      const currentValues = prev[field as keyof typeof formData] as string[];
-      const isSelected = currentValues.includes(value);
-      return {
-        ...prev,
-        [field]: isSelected
-          ? currentValues.filter(v => v !== value)
-          : [...currentValues, value]
-      };
-    });
-  };
 
   const handleSubmit = () => {
     console.log('Form submitted:', formData);

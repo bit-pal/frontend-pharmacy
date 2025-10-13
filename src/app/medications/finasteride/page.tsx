@@ -324,7 +324,7 @@ export default function FinasterideProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -378,7 +378,7 @@ export default function FinasterideProductPage() {
               {expandedSection === 'what' && (
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 mb-4">
-                    Finasteride is a medication used to treat male pattern hair loss (androgenetic alopecia). It's the generic version of Propecia and works by blocking the enzyme 5-alpha-reductase, which converts testosterone to dihydrotestosterone (DHT).
+                    Finasteride is a medication used to treat male pattern hair loss (androgenetic alopecia). It&apos;s the generic version of Propecia and works by blocking the enzyme 5-alpha-reductase, which converts testosterone to dihydrotestosterone (DHT).
                   </p>
                   <p className="text-gray-700 mb-4">
                     DHT is the hormone responsible for shrinking hair follicles in men with male pattern baldness. By reducing DHT levels by up to 70%, finasteride helps to prevent further hair loss and can promote hair regrowth.
@@ -415,7 +415,7 @@ export default function FinasterideProductPage() {
                     <li>Maximum results after 12-24 months</li>
                   </ul>
                   <p className="text-gray-700 mb-4">
-                    It's important to continue taking finasteride to maintain results. If you stop taking it, any hair growth will be lost within 6-12 months.
+                    It&apos;s important to continue taking finasteride to maintain results. If you stop taking it, any hair growth will be lost within 6-12 months.
                   </p>
                 </div>
               )}
@@ -455,7 +455,7 @@ export default function FinasterideProductPage() {
                 onClick={() => toggleSection('who')}
                 className="w-full flex items-center justify-between p-6 text-left"
               >
-                <span className="text-lg font-semibold text-gray-900">Who shouldn't take Finasteride?</span>
+                <span className="text-lg font-semibold text-gray-900">Who shouldn&apos;t take Finasteride?</span>
                 <span className="text-2xl text-gray-600">{expandedSection === 'who' ? '−' : '+'}</span>
               </button>
               {expandedSection === 'who' && (

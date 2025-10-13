@@ -330,7 +330,7 @@ export default function SildenafilProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -414,7 +414,7 @@ export default function SildenafilProductPage() {
                     <li>Take 30-60 minutes before sexual activity</li>
                   </ul>
                   <p className="text-gray-700">
-                    Sildenafil is suitable for most men with ED. However, it's important to consult with a healthcare professional before starting treatment to ensure it's appropriate for you.
+                    Sildenafil is suitable for most men with ED. However, it&apos;s important to consult with a healthcare professional before starting treatment to ensure it&apos;s appropriate for you.
                   </p>
                 </div>
               )}
@@ -471,7 +471,7 @@ export default function SildenafilProductPage() {
                     <li>Visual disturbances (blurred vision, changes in color vision)</li>
                   </ul>
                   <p className="text-gray-700 mb-4">
-                    These side effects are usually mild and don't last long. If you experience any serious side effects or if the side effects persist, contact your doctor.
+                    These side effects are usually mild and don&apos;t last long. If you experience any serious side effects or if the side effects persist, contact your doctor.
                   </p>
                   <p className="text-gray-700 mb-4 font-semibold">
                     Seek immediate medical attention if you experience:
@@ -492,7 +492,7 @@ export default function SildenafilProductPage() {
                 onClick={() => toggleSection('who')}
                 className="w-full flex items-center justify-between p-6 text-left"
               >
-                <span className="text-lg font-semibold text-gray-900">Who shouldn't take Sildenafil?</span>
+                <span className="text-lg font-semibold text-gray-900">Who shouldn&apos;t take Sildenafil?</span>
                 <span className="text-2xl text-gray-600">{expandedSection === 'who' ? '−' : '+'}</span>
               </button>
               {expandedSection === 'who' && (
@@ -509,7 +509,7 @@ export default function SildenafilProductPage() {
                     <li>Are allergic to sildenafil or any of the other ingredients</li>
                   </ul>
                   <p className="text-gray-700">
-                    Always inform your doctor about all medications you're taking and any medical conditions you have before starting Sildenafil.
+                    Always inform your doctor about all medications you&apos;re taking and any medical conditions you have before starting Sildenafil.
                   </p>
                 </div>
               )}

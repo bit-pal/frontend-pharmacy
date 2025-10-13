@@ -319,7 +319,7 @@ export default function TadalafilDailyProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -391,7 +391,7 @@ export default function TadalafilDailyProductPage() {
               {expandedSection === 'what' && (
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 mb-4">
-                    Tadalafil Daily is a lower-dose version of Tadalafil taken every day, rather than on-demand. This means you'll always be ready for sexual activity without needing to plan ahead.
+                    Tadalafil Daily is a lower-dose version of Tadalafil taken every day, rather than on-demand. This means you&apos;ll always be ready for sexual activity without needing to plan ahead.
                   </p>
                   <p className="text-gray-700 mb-4">
                     By taking a small daily dose, you maintain a steady level of the medication in your system, allowing for spontaneous sexual activity at any time.
@@ -428,7 +428,7 @@ export default function TadalafilDailyProductPage() {
                     <li>Take at the same time each day to maintain steady levels</li>
                     <li>Can be taken with or without food</li>
                     <li>Sexual stimulation is still required for the medication to work</li>
-                    <li>After a few days, you'll be ready for sex at any time</li>
+                    <li>After a few days, you&apos;ll be ready for sex at any time</li>
                     <li>Do not take more than one tablet per day</li>
                   </ul>
                   <p className="text-gray-700 mb-4">
@@ -481,7 +481,7 @@ export default function TadalafilDailyProductPage() {
                 onClick={() => toggleSection('who')}
                 className="w-full flex items-center justify-between p-6 text-left"
               >
-                <span className="text-lg font-semibold text-gray-900">Who shouldn't take Tadalafil Daily?</span>
+                <span className="text-lg font-semibold text-gray-900">Who shouldn&apos;t take Tadalafil Daily?</span>
                 <span className="text-2xl text-gray-600">{expandedSection === 'who' ? '−' : '+'}</span>
               </button>
               {expandedSection === 'who' && (
@@ -498,7 +498,7 @@ export default function TadalafilDailyProductPage() {
                     <li>Are allergic to tadalafil or any of the other ingredients</li>
                   </ul>
                   <p className="text-gray-700">
-                    Always inform your doctor about all medications you're taking and any medical conditions you have before starting Tadalafil Daily.
+                    Always inform your doctor about all medications you&apos;re taking and any medical conditions you have before starting Tadalafil Daily.
                   </p>
                 </div>
               )}

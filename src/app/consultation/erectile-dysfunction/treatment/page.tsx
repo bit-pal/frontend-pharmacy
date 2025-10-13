@@ -35,7 +35,7 @@ export default function ErectileDysfunctionTreatmentPage() {
 
   const handleBuyNow = (medicationType: string) => {
     // Define product data based on medication type
-    const productDataMap: { [key: string]: any } = {
+    const productDataMap: { [key: string]: Record<string, unknown> } = {
       sildenafil: {
         name: 'Viagra & Generic Sildenafil',
         price: 71.99,

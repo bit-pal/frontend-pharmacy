@@ -326,7 +326,7 @@ export default function SpedraProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -398,7 +398,7 @@ export default function SpedraProductPage() {
               {expandedSection === 'what' && (
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 mb-4">
-                    Spedra (avanafil) is a newer ED treatment known for its fast action. It's the fastest-acting ED medication available, working in as little as 15-30 minutes.
+                    Spedra (avanafil) is a newer ED treatment known for its fast action. It&apos;s the fastest-acting ED medication available, working in as little as 15-30 minutes.
                   </p>
                   <p className="text-gray-700 mb-4">
                     Spedra works by relaxing the blood vessels in your penis, allowing blood to flow into your penis when you get sexually excited. It will only help you to get an erection if you are sexually stimulated.
@@ -467,7 +467,7 @@ export default function SpedraProductPage() {
                     <li>Dizziness</li>
                   </ul>
                   <p className="text-gray-700 mb-4">
-                    These side effects are usually mild and don't last long. Many men find Spedra has fewer side effects than other ED treatments.
+                    These side effects are usually mild and don&apos;t last long. Many men find Spedra has fewer side effects than other ED treatments.
                   </p>
                   <p className="text-gray-700 mb-4 font-semibold">
                     Seek immediate medical attention if you experience:
@@ -488,7 +488,7 @@ export default function SpedraProductPage() {
                 onClick={() => toggleSection('who')}
                 className="w-full flex items-center justify-between p-6 text-left"
               >
-                <span className="text-lg font-semibold text-gray-900">Who shouldn't take Spedra?</span>
+                <span className="text-lg font-semibold text-gray-900">Who shouldn&apos;t take Spedra?</span>
                 <span className="text-2xl text-gray-600">{expandedSection === 'who' ? '−' : '+'}</span>
               </button>
               {expandedSection === 'who' && (
@@ -505,7 +505,7 @@ export default function SpedraProductPage() {
                     <li>Are allergic to avanafil or any of the other ingredients</li>
                   </ul>
                   <p className="text-gray-700">
-                    Always inform your doctor about all medications you're taking and any medical conditions you have before starting Spedra.
+                    Always inform your doctor about all medications you&apos;re taking and any medical conditions you have before starting Spedra.
                   </p>
                 </div>
               )}

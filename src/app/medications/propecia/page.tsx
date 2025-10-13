@@ -320,7 +320,7 @@ export default function PropeciaProductPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Optional Post Office Collection</h3>
-              <p className="text-gray-600">If having your order shipped to a home or work address doesn't suit you then you can select to collect from a post office convenient to you.</p>
+              <p className="text-gray-600">If having your order shipped to a home or work address doesn&apos;t suit you then you can select to collect from a post office convenient to you.</p>
             </div>
           </div>
         </div>
@@ -377,7 +377,7 @@ export default function PropeciaProductPage() {
                     Propecia is the original brand name medication for treating male pattern hair loss, manufactured by Merck. It contains finasteride as its active ingredient and works by blocking the enzyme 5-alpha-reductase.
                   </p>
                   <p className="text-gray-700 mb-4">
-                    Propecia reduces DHT (dihydrotestosterone) levels by up to 70%, helping to prevent further hair loss and promote hair regrowth. It's the same medication as generic finasteride but carries the trusted brand name.
+                    Propecia reduces DHT (dihydrotestosterone) levels by up to 70%, helping to prevent further hair loss and promote hair regrowth. It&apos;s the same medication as generic finasteride but carries the trusted brand name.
                   </p>
                   <ul className="list-disc pl-6 space-y-2 mb-4">
                     <li>Original brand name treatment</li>
